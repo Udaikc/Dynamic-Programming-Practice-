@@ -17,3 +17,14 @@ print(fib(50))"""
 whereas fib1 workson dynamic programming of memorisation 
 each and every value are added to set object called suring function call
 the time complexity of fib is O(n) and fib1 is way less than O(n)"""
+
+def fib2(n,memo={}):
+    if n in memo: return memo[n]
+    if n<2:
+        return 1
+    memo[n]=fib2(n-1)+fib2(n-2)
+    return memo[n]
+
+n=50
+for i in range(n):
+    print(fib2(i))
