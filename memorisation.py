@@ -16,7 +16,7 @@ print(fib(50))"""
 """fib works on traditional recursive approach 
 whereas fib1 workson dynamic programming of memorisation 
 each and every value are added to set object called suring function call
-the time complexity of fib is O(n) and fib1 is way less than O(n)"""
+the time complexity of fib is O(2^n) and fib1 is way less than O(2^n)"""
 
 """def fib2(n,memo={}):
     if n in memo: return memo[n]
