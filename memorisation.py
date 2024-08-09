@@ -1,10 +1,10 @@
-def fib1(n,memo={}):
+"""def fib1(n,memo={}):
     if n in memo: return memo[n]
     if n<=2: return 1
     memo[n]=fib1(n-1,memo)+fib1(n-2,memo)
     return memo[n]
 
-print(fib1(50))
+print(fib1(50))"""
 
 """def fib(n):
     if n<=2: return 1
@@ -18,13 +18,17 @@ whereas fib1 workson dynamic programming of memorisation
 each and every value are added to set object called suring function call
 the time complexity of fib is O(n) and fib1 is way less than O(n)"""
 
-def fib2(n,memo={}):
+"""def fib2(n,memo={}):
     if n in memo: return memo[n]
     if n<2:
         return 1
     memo[n]=fib2(n-1)+fib2(n-2)
     return memo[n]
 
-n=50
+n=100
 for i in range(n):
-    print(fib2(i))
+    print(fib2(i))"""
+
+"""this fib2 function displays all the numbers  from 0 to speciied n value
+with good time complexity"""
+
